@@ -1,0 +1,18 @@
+1. The detected CUDA version (11.7) mismatches the version that was used to compile
+PyTorch (10.2). Please make sure to use the same CUDA versions.
+Reference page: https://blog.csdn.net/usingvc6/article/details/126174171
+
+
+2. RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Reference page: https://zhuanlan.zhihu.com/p/427395039
+Version confict: pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+
+3. multi-part file merge
+The cat-based solution didn't work for me, 
+but merging the files using zip -F file.zip --out file-large.zip and then unzip file-large.zip did work.
+Reference page: https://stackoverflow.com/questions/36807921/unzipping-the-multipart-file-bad-zipfile-offset-local-header-sig-4
+
+4. 
