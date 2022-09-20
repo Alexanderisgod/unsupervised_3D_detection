@@ -1,4 +1,4 @@
 python test.py  --cfg_file /home/yihang/projects/unsupervised_3D_detection/tools/cfgs/kitti_models/CaDDN.yaml \
                 --workers 1\
-                --batch_size 1 \
+                --batch_size 2 \
                 --ckpt /home/yihang/projects/unsupervised_3D_detection/model/caddn.pth

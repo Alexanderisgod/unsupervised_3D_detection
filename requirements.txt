@@ -13,11 +13,11 @@ idna==2.10
 imageio==2.9.0
 kiwisolver==1.3.1
 kornia==0.5.7
-llvmlite==0.35.0
+llvmlite==0.39.1
 Markdown==3.3.4
 matplotlib==3.3.4
 networkx==2.5
-numba==0.52.0
+numba==0.56.2
 numpy==1.20.1
 oauthlib==3.1.0
 Pillow==8.1.2
